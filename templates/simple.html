@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mid Point Line Algorithm</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<style>
+table {
+  width: 40%;
+}
+
+.center{
+    margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+td {
+  text-align: center;
+}
+th {
+  text-align: center;
+}
+</style>
+<body>
+<div class="center">
+{% for table in tables %}
+           
+    {{ table|safe }}
+{% endfor %}
+</div>
+
+</body>
+<footer>
+    <script type='text/javascript'>
+        window.onload = function() {
+        //   const thead = document.querySelectorAll('.table > thead');
+        //   thead.forEach(e => e.classList.add('thead-light'));
+
+          const thead = document.querySelectorAll('.table > thead');
+          thead.forEach(e => e.classList.add('table-dark'));
+        }
+      </script>
+</footer>
+</html>
